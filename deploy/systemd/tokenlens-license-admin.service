@@ -1,0 +1,17 @@
+[Unit]
+Description=TokenLens License Admin Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tokenlens-license-admin
+Environment=DB_PATH=/opt/tokenlens-license-admin/license_admin.db
+Environment=LICENSE_PRIVATE_KEY_PATH=/opt/tokenlens-license-admin/keys/license_private.pem
+ExecStart=/usr/bin/env uvicorn app:app --host 127.0.0.1 --port 8001
+Restart=always
+RestartSec=5
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target
