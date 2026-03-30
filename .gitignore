@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Keys (keep directory but ignore actual keys in production)
+# keys/*.pem  # Uncomment this in production to protect private keys
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env files
+.env.local
+.env.prod
+
+# PID files
+*.pid
+db/*
+*.db
+*.log
+*.pid
