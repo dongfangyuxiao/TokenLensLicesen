@@ -35,3 +35,6 @@ db/*
 *.db
 *.log
 *.pid
+
+# Private keys - NEVER commit these
+keys/license_private.pem
